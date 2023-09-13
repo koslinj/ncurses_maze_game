@@ -1,0 +1,5 @@
+client: client.c functions.c
+	gcc client.c functions.c -Wall -pedantic -o client -lncurses -lpthread
+server: server.c functions.c
+	gcc server.c functions.c -Wall -pedantic -o server -lncurses -lpthread
+all: client server
